@@ -16,7 +16,6 @@ my %WriteMakefileArgs = (
   "MIN_PERL_VERSION" => "5.008001",
   "NAME" => "LeftPad",
   "PREREQ_PM" => {
-    "Carp" => 0,
     "Exporter" => 0,
     "base" => 0,
     "strict" => 0,
@@ -36,7 +35,6 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
-  "Carp" => 0,
   "Exporter" => 0,
   "ExtUtils::MakeMaker" => 0,
   "File::Spec" => 0,

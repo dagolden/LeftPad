@@ -7,8 +7,6 @@ package LeftPad;
 
 our $VERSION = '0.003';
 
-use Carp;
-
 use base 'Exporter';
 our @EXPORT = qw/leftpad/;
 

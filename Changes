@@ -2,6 +2,10 @@ Revision history for LeftPad
 
 {{$NEXT}}
 
+    [PREREQS]
+
+    - Removes dependency on Carp
+
 0.002     2016-04-24 06:25:36-04:00 America/New_York
 
     [FIXES]
