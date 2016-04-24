@@ -2,6 +2,8 @@ Revision history for LeftPad
 
 {{$NEXT}}
 
+0.002     2016-04-24 06:25:36-04:00 America/New_York
+
     [FIXES]
 
     - Only uses single pad character if given a pad string.  Empty pad
