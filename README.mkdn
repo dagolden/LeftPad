@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/dagolden/LeftPad.svg?branch=master)](https://travis-ci.org/dagolden/LeftPad)
+
 # NAME
 
 LeftPad - Why should Node.js have all the fun?
