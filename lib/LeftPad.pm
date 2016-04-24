@@ -21,12 +21,17 @@ Returns a copy of the input string with left padding if the input string
 length is less than the minimum length.  It pads with spaces unless given a
 pad character as a third argument.
 
+Zero or negative minimum length returns the input string.  Only the first
+character in the pad-character string is used.  Undefined warnings are
+suppressed so an undefined input string is treated as an empty string.
+
 =cut
 
 sub leftpad {
     no warnings 'uninitialized';
-    return sprintf( "%*s", $_[1], $_[0] ) unless defined $_[2];
-    return $_[2] x ( $_[1] - length( $_[0] ) ) . $_[0];
+    return "" . $_[0] if $_[1] < 1;
+    return sprintf( "%*s", $_[1], $_[0] ) unless defined $_[2] && length $_[2];
+    return substr( $_[2], 0, 1 ) x ( $_[1] - length $_[0] ) . $_[0];
 }
 
 1;

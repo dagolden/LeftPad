@@ -21,6 +21,12 @@ is( leftpad( undef, 6, "0" ), "000000", "<undef,6,0>" );
 is( leftpad("foo"), "foo", "foo, <undef>" );
 is( leftpad( "§¶•\x{1f4a9}", 6 ), "  §¶•\x{1f4a9}", "§¶•\x{1f4a9}, 6" );
 
+# Adapted from GH#1
+is( leftpad( "input", 9,  "|-" ), "||||input", "Double-width pad-string" );
+is( leftpad( "input", 7,  "" ),   "  input",   "Padding with empty pad char" );
+is( leftpad( "input", 0,  "|-" ), "input",     "Padding to zero-width" );
+is( leftpad( "input", -1, "|-" ), "input",     "Padding to negative-width" );
+
 done_testing;
 # COPYRIGHT
 # vim: set ts=4 sts=4 sw=4 et tw=75:
