@@ -1,4 +1,5 @@
 use 5.008001;
+use utf8;
 use strict;
 use warnings;
 use Test::More 0.96;
@@ -18,6 +19,7 @@ is( leftpad( "foobar", 5 ), "foobar", "foobar, 5" );
 is( leftpad( undef,    6 ), "      ", "<undef>,6" );
 is( leftpad( undef, 6, "0" ), "000000", "<undef,6,0>" );
 is( leftpad("foo"), "foo", "foo, <undef>" );
+is( leftpad( "§¶•\x{1f4a9}", 6 ), "  §¶•\x{1f4a9}", "§¶•\x{1f4a9}, 6" );
 
 done_testing;
 # COPYRIGHT
