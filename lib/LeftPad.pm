@@ -5,7 +5,7 @@ use warnings;
 package LeftPad;
 # ABSTRACT: Why should Node.js have all the fun?
 
-our $VERSION = '0.003';
+our $VERSION = '0.004';
 
 use base 'Exporter';
 our @EXPORT = qw/leftpad/;
