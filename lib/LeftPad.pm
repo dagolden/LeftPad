@@ -5,7 +5,7 @@ use warnings;
 package LeftPad;
 # ABSTRACT: Why should Node.js have all the fun?
 
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 
 use Carp;
 
